@@ -11,6 +11,9 @@ This project is a React-based shopping cart application designed to provide user
 - **Total Price Calculation**: Automatically calculate and display the total price of items in the cart based on quantities and individual prices.
 - **Responsive Design**: Ensure seamless user experience across various devices and screen sizes.
 
+## Live Demo
+[Click here to view the live demo](https://react-redux-shopping-cart-demo.netlify.app/)
+
 ## Components
 1. **App**: The main component of the application. It wraps the entire application and provides the context for product data using the `DataComponent`.
 

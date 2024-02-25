@@ -4,6 +4,9 @@ import { ProductContext } from '../Utils/DataComponent'; // Ensure correct path 
 import { decrease_cart, increase_cart, remove_cart, saveAllBlogs } from '../Redux/BlogSlice';
 import NavBar from './NavBar'; // Import NavBar component
 import './style/CartComp.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 // Component for displaying and managing the shopping cart
 const CardComp = () => {
@@ -48,6 +51,7 @@ const CardComp = () => {
     // Handler function for removing an item from the cart
     const handleDelete = (id) => {
         dispatch(remove_cart({ id }));
+        toast.success('Item removed from cart');
     };
 
     // Selecting total cart quantity from Redux store
